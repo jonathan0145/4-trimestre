@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Todas las Etiquetas HTML</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a la Página de Ejemplo</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Sección 1</a></li>
+                <li><a href="#section2">Sección 2</a></li>
+                <li><a href="#section3">Sección 3</a></li>
+                <li><a href="#section4">Sección 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="section1">
+            <h2>Sección 1: Encabezados y Párrafos</h2>
+            <h3>Encabezado de nivel 3</h3>
+            <p>Este es un párrafo de texto. <strong>Texto en negrita</strong>, <em>texto en cursiva</em>, <u>texto subrayado</u>. También podemos usar <mark>texto resaltado</mark>, <sub>subíndice</sub> y <sup>superíndice</sup>.</p>
+            <p>Texto con una <a href="https://www.google.com" target="_blank">enlace a Google</a>.</p>
+        </section>
+        
+        <section id="section2">
+            <h2>Sección 2: Listas y Tablas</h2>
+            <h3>Lista desordenada</h3>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ol>
+            <h3>Tabla</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                        <th>Columna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                        <td>Dato 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 4</td>
+                        <td>Dato 5</td>
+                        <td>Dato 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="section3">
+            <h2>Sección 3: Imágenes, Formularios y Otros</h2>
+            <h3>Imagen</h3>
+            <figure class="figure">
+                <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo">
+                <figcaption>Figura 1: Imagen de ejemplo</figcaption>
+            </figure>
+            <h3>Formulario</h3>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <h3>Otros elementos</h3>
+            <blockquote>Cita en bloque.</blockquote>
+            <code>console.log('Hola, mundo!');</code>
+            <pre>
+function saludar() {
+    console.log("Hola, mundo!");
+}
+            </pre>
+            <audio controls>
+                <source src="audiofile.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <video controls width="250">
+                <source src="videofile.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
+
+        <section id="section4">
+            <h2>Sección 4: Más Elementos HTML</h2>
+            <h3>Detalles y Resumen</h3>
+            <details>
+                <summary>Haz clic para más información</summary>
+                <p>Este es el contenido adicional que se muestra al hacer clic en el resumen.</p>
+            </details>
+            <h3>Dirección</h3>
+            <address>
+                123 Calle Falsa,<br>
+                Ciudad Ejemplo,<br>
+                País de Ejemplo
+            </address>
+            <h3>Artículo</h3>
+            <article>
+                <h4>Título del Artículo</h4>
+                <p>Este es el contenido del artículo. Se puede usar para mostrar publicaciones de blog o artículos de noticias.</p>
+            </article>
+            <h3>Elemento Aside</h3>
+            <aside>
+                <p>Este es un contenido adicional relacionado, mostrado en un bloque aside.</p>
+            </aside>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Ejemplo de Página Web</p>
+    </footer>
+</body>
+</html>
