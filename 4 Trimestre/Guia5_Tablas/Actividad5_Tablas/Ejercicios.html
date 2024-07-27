@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        #tab1{
+            text-align: center;
+        }
+        .gris{
+            background-color: darkgray;
+        }
+        #tab1 th{
+            background-color: gray;
+            color:white;
+        }
+        .izq{
+            text-align: left;
+        }
+        #tab2{
+            text-align: center;
+        }
+        #tab2 th{
+            background-color:lightgray;
+        }
+        #tab2 .th1{
+            text-align: left;
+            background-color: cyan;
+        }
+        #tab2 img{
+            width: 1em;
+        }
+        .color{
+            background-color:khaki;
+        }
+    </style>
+</head>
+<body>
+    <!--!a-->
+    <table>
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+        <tr> 
+            <td>400</td>
+            <td>500</td>
+            <td>600</td>
+        </tr>
+    </table>
+    <br>
+    <!--!b-->
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Telefono</th>
+            <th>Telefono</th>
+
+        </tr>
+        <tr> 
+            <td>Bill Gates</td>
+            <td>555 77 854</td>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <br>
+    <!--!c-->
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr> 
+            <th>Telefono</th>
+            <td>555 77 854</td>
+        </tr>
+        <tr> 
+            <th>Telefono</th>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <br>
+    <!--!d-->
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th colspan="2">Telefono</th>
+        </tr>
+        <tr> 
+            <td>Bill Gates</td>
+            <td>555 77 854</td>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <br>
+    <!--!e-->
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr> 
+            <th rowspan="2">Telefono</th>
+            <td>555 77 854</td>
+        </tr>
+        <tr> 
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <br>
+    <!--!f-->
+    <table border="1" cellspacing="10">
+        <tr>
+            <td>Primera</td>
+            <td>Fila</td>
+        </tr>
+        <tr> 
+            <td>Segunda</td>
+            <td>Fila</td>
+        </tr>
+    </table>
+    <br>
+    <!--!2 Realizar la siguiente tabla-->
+    <table id="tab1" border="1">
+        <tr>
+            <th colspan="4">Periodicos</th>
+        </tr>
+        <tr>
+            <td class="izq, gris">Nombre</td>
+            <td class="gris">Cabezas</td>
+            <td class="gris">Prevision <br> 2010</td>
+            <td class="gris">Prevision <br> 2020</td>
+        </tr>
+        <tr>
+            <td class="izq">El tiempo</td>
+            <td>6000</td>
+            <td>4000</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td class="izq">El espectador</td>
+            <td>50</td>
+            <td colspan="2" rowspan="2"><img src="imagenes/images.png" alt="logo"></td>
+        </tr>
+        <tr>
+            <td class="izq">El <br> colombiano</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td class="izq">RcnRadio</td>
+            <td>300</td>
+            <td colspan="2">210</td>
+        </tr>
+    </table>
+    <br>
+<!--!3 Determinar las reglas CSS necesarias para que el resultado sea similar al mostrado en la siguiente imagen:-->
+    <table id="tab2" border="1" cellspacing="0">
+        <tr>
+            <th>Cambio</th>
+            <th>Compra</th>
+            <th>Venta</th>
+            <th>Máximo</th>
+            <th>Minimo</th>
+        </tr>
+        <tr>
+            <th class="th1"><img src="imagenes/euro.jpg" alt="">Euro/Dolar</th>
+            <td class="color">1.2524</td>
+            <td class="color">1.2527</td>
+            <td class="color">1.2539</td>
+            <td class="color">1.2488</td>
+        </tr>
+        <tr>
+            <th class="th1"><img src="imagenes/dolar.png" alt="">Dolar/Yen</th>
+            <td>119.01</td>
+            <td>119.05</td>
+            <td>119.82</td>
+            <td>119.82</td>
+        </tr>
+        <tr>
+            <th class="th1"><img src="imagenes/libra.jpg" alt="">Libra/Dolar</th>
+            <td class="color">1.8606</td>
+            <td class="color">1.8611</td>
+            <td class="color">1.8651</td>
+            <td class="color">1.8522</td>
+        </tr>
+        <tr>
+            <th class="th1"><img src="imagenes/yen.png" alt="">Yen/Euro</th>
+            <td>0.6711</td>
+            <td>0.6705</td>
+            <td>0.6676</td>
+            <td>0.6713</td>
+        </tr>
+    </table>
+</body>
+</html>
