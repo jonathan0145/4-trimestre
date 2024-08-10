@@ -1,26 +1,53 @@
-var total;
+// Inicializa las variables
+var total = 0;
+var apostado = 0;
+var tirosRestantes = 5; // Número máximo de tiros permitido
 
-// document.getElementById('apostar').addEventListener('click', function() {
-//     var apuesta= document.getElementById('apuesta').value;
-//     apostado = apuesta;
-// });
+    // Esperar a que el documento esté completamente cargado
+    document.addEventListener('DOMContentLoaded', () => {
+        // Obtener referencias a los elementos del DOM
+        const apuestaInput = document.getElementById('apuesta');
+        const apostarButton = document.getElementById('apostar');
+        const resultDiv = document.getElementById('result');
+        const generateButton = document.getElementById('generateButton');
 
-document.getElementById('generateButton').addEventListener('click', function() {
-    var apuesta= document.getElementById('apuesta').value;
+        // Añadir un evento al botón de apostar
+        apostarButton.addEventListener('click', () => {
+            // Capturar el valor del input y convertirlo a número
+            apostado = parseFloat(apuestaInput.value) || 0;
+            resultDiv.textContent = `El valor apostado es: ${apostado}`;
+        });
 
-    var randomNumber = Math.floor(Math.random() * 6) + 1;
-    var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+        // Añadir un evento al botón de lanzar
+        generateButton.addEventListener('click', () => {
+            if (tirosRestantes > 0) {
+                var randomNumber = Math.floor(Math.random() * 6) + 1;
+                var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 
-    if((randomNumber + randomNumber1) == 7){
-        total += (apuesta * 5);
-    }else if(randomNumber == randomNumber1){
-        total += (apuesta * 3);
-    }else if((randomNumber + randomNumber1) == 3){
-        total += (apuesta * 2);
-    }
+                // Aplicar la lógica según los números generados
+                if ((randomNumber + randomNumber1) === 7) {
+                    total += (apostado * 5);
+                } else if (randomNumber === randomNumber1) {
+                    total += (apostado * 3);
+                } else if ((randomNumber + randomNumber1) === 3) {
+                    total += (apostado * 2);
+                }
 
-  console.log(total);
-    document.getElementById('result').textContent = 'Número Aleatorio: ' + randomNumber + ' y ' + randomNumber1;
-});
+                // Mostrar resultados
+                document.getElementById('result').textContent = `Número Aleatorio: ${randomNumber} y ${randomNumber1}`;
+                document.getElementById('result1').textContent = `Total acumulado: ${total}`;
 
-console.log(apostado);
+                // Decrementar el número de tiros restantes
+                tirosRestantes--;
+
+                // Informar al usuario de los tiros restantes
+                resultDiv.textContent += ` | Tiros restantes: ${tirosRestantes}`;
+
+                // Desactivar el botón si no hay más tiros restantes
+                if (tirosRestantes === 0) {
+                    generateButton.disabled = true;
+                    resultDiv.textContent += " | ¡No tienes más tiros!";
+                }
+                }
+            });
+        });
