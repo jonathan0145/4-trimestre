@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/login.css">
+    <title>Inmotech/Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="../multimedia/imagenes/logo_200x200.png" alt="logo inmotech">
+        <h1>INMOTECH</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="button-group">
+                <button id="loginBtn" onclick="showContent('login')">Iniciar Sesión</button>
+                <button id="registerBtn" onclick="showContent('register')">Registrarse</button>
+            </div>
+            <div id="content">
+                <!-- Contenido de Iniciar Sesión por defecto -->
+                <div id="loginContent" class="content-item">
+                    <h2>Iniciar Sesión</h2>
+                    <form action="">
+                        <input type="text">
+                        <input type="password">
+                        <input type="button" value="Ingresar">
+                    </form>
+                </div>
+
+                <!-- Contenido de Registro oculto por defecto -->
+                <div id="registerContent" class="content-item" style="display: none;">
+                    <h2>Registro</h2>
+                    <form>
+                        <label for="registerUsername">Usuario:</label>
+                        <input type="text" id="registerUsername" name="registerUsername">
+                        <label for="registerEmail">Correo Electrónico:</label>
+                        <input type="email" id="registerEmail" name="registerEmail">
+                        <label for="registerPassword">Contraseña:</label>
+                        <input type="password" id="registerPassword" name="registerPassword">
+                        <button type="submit">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="informacion_login">
+            <h2>Bienvenidos a INMOTECH</h2>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../javascript/login.js"></script>
+</body>
+</html> 
