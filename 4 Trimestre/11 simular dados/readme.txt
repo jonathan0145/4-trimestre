@@ -7,3 +7,4 @@ si numeros igual multiplicarlo por 3
 el acumulado se va sumando
 si la sumatoria es 3 que multiplique por 2
 a los 6 intentos mostrar el acomulado
+

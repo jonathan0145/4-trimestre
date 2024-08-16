@@ -1,0 +1,41 @@
+body{
+    background-color: yellow;
+}
+
+#contenido{
+    background-color: black;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#pa{
+    color: white;
+    text-shadow: 2px 2px 2px yellow;
+    font-size: 30px;
+
+}
+input{
+    width: 46%;
+    height: 40px;
+    background-color: grey;
+    color: yellow;
+    font-size: 20px;
+    border: 3px solid black;
+}
+
+
+input::placeholder{
+    color: yellow;
+    padding-left: 10px;
+}
+
+input:hover{
+    cursor: pointer;
+    background-color:darkmagenta;
+    color: yellow;
+}
+
+#num:focus{
+    background: linear-gradient(to right, grey 50%, darkmagenta 50%);
+}
