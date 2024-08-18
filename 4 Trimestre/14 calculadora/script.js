@@ -18,6 +18,7 @@ class Calculadora {
     }
 
     operar(operacion) {
+        if (this.numeroActual === '') return;
         this.numeroPrevio = this.numeroActual;
         this.operacionActual = operacion;
         this.numeroActual = '';
@@ -25,6 +26,8 @@ class Calculadora {
     }
 
     igual() {
+        if (this.numeroActual === '' || this.numeroPrevio === '') return;
+
         let resultado;
         const num1 = parseFloat(this.numeroPrevio);
         const num2 = parseFloat(this.numeroActual);
