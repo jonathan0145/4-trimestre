@@ -57,8 +57,12 @@ class Producto {
 }
 
 class gaseosa{
-    constructor(){
-        
+    constructor(codigo,nombre,marca,tamaño,valor){
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.marca = marca;
+        this.tamaño = tamaño;
+        this.valor = valor;
     }
 }
 

@@ -7,8 +7,18 @@ body{
 
 #tabla1{
     width: 40%;
-    height: 40%;
+    height: 45%;
     background-color: red;
+}
+
+#tabla1 h2{
+    width: 20%;
+    margin: auto;
+    background-color:brown;
+    color: white;
+    padding: 2%;
+    margin-top: 2%;
+    text-align: center;
 }
 
 #tabla{
