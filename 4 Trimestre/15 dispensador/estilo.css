@@ -2,13 +2,14 @@ body{
     width: 100%;
     height: 800px;
     background-color: chocolate;
-    
+        display: flex;
 }
 
 #tabla1{
     width: 40%;
-    height: 45%;
+    height: 50%;
     background-color: red;
+    position: absolute;
 }
 
 #tabla1 h2{
@@ -33,4 +34,31 @@ button{
     height: 40px;
     background-color: chartreuse;
     margin: 0% 0% 3% 6%;
+}
+
+#tabla2{
+    width: 40%;
+    height: 50%;
+    background-color: red;
+    margin-top: 10px;
+    position: absolute;
+    left: 43%;
+    top: -0.2%;
+}
+
+#tabla2 h2{
+    width: 20%;
+    margin: auto;
+    background-color:brown;
+    color: white;
+    padding: 2%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+#tablas{
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    margin: 10px 5% 10px 5%;
 }
