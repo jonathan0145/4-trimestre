@@ -5,13 +5,22 @@ body{
     
 }
 
-#tabla{
-    width: 15%;
-    font-size: 20px;
+#tabla1{
+    width: 40%;
+    height: 40%;
+    background-color: red;
 }
 
-input{
-    width: 5%;
+#tabla{
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    margin: 10px 5% 10px 5%;
+}
+
+button{
+    width: 25%;
     height: 40px;
     background-color: chartreuse;
+    margin: 0% 0% 3% 6%;
 }
