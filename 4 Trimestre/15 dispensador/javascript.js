@@ -57,14 +57,29 @@ class Producto {
 }
 
 class gaseosa{
-    constructor(codigo,nombre,marca,tamaño,valor){
+    constructor(codigo,nombre,tamaño, envase,valor){
         this.codigo = codigo;
         this.nombre = nombre;
-        this.marca = marca;
         this.tamaño = tamaño;
+        this.envase = envase;
         this.valor = valor;
     }
+
 }
+
+// productos
+const cocap250 = new gaseosa(1,"coca cola", 250,"plastico",2000);
+const cocap500 = new gaseosa(2,"coca cola", 500,"plastico",3000);
+const cocap1000 = new gaseosa(3,"coca cola", 1000,"plastico",4000);
+const cocap1500 = new gaseosa(4,"coca cola", 1500,"plastico",5000);
+const cocap2000 = new gaseosa(5,"coca cola", 2000,"plastico",6000);
+const cocap2500 = new gaseosa(6,"coca cola", 2500,"plastico",7000);
+const cocap3000 = new gaseosa(7,"coca cola", 3000,"plastico",8000);
+const cocav200 = new gaseosa(8,"coca cola", 200,"vidrio",2300);
+const cocav330 = new gaseosa(9,"coca cola", 330,"vidrio",3300);
+const cocav350 = new gaseosa(10,"coca cola", 350,"vidrio",3800);
+
+const gaseosas = [cocap250, cocap500,cocap1000, cocap1500, cocap2000, cocap2500, cocap3000,cocav200,cocav330, cocav350];
 
 // Instancia de la clase
 const moneda = new Producto();
