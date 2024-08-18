@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Dispensador</title>
+</head>
+<body>
+    <header>
+        <h1>Dispensador</h1>
+    </header>
+
+    <div>
+        <form action="">
+            <input id="tabla" type="text" readonly>
+            <br>
+            <br>
+
+            <input id="boton50" type="button" value="50" onclick="valor()">
+            <input id="boton100" type="button" value="100" onclick="valor()">
+            <input id="boton200" type="button" value="200" onclick="valor()">
+            <br>
+            <input id="boton500" type="button" value="500" onclick="valor()">
+            <input id="boton1000" type="button" value="1000" onclick="valor()">
+            <input id="boton2000" type="button" value="2000" onclick="valor()">
+            <br>
+            <input id="boton5000" type="button" value="5000" onclick="valor()">
+            <input id="boton10000" type="button" value="10000" onclick="valor()">
+            <input id="boton20000" type="button" value="20000" onclick="valor()">
+            <br>
+            <input id="boton50000" type="button" value="50000" onclick="valor()">
+            <input id="boton100000" type="button" value="100000" onclick="valor()">
+            <input id="borrar" type="button" value="Borrar" onclick="valor()">
+
+        </form>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
+<!-- 
+    ? que necesito tener en cuenta para crear un dispensador
+    * crear inputs tipo boton que tengan los valores de la moneda colombiana
+    * crear productos al menos 10 y darles un valor
+    * poner condicionales si pone menos del valor del producto o si pone de mas o si es completo
+ -->
