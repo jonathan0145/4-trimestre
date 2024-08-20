@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simple con Clases</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .calculadora {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            font-size: 18px;
+            margin: 5px;
+        }
+        input {
+            width: 150px;
+            text-align: right;
+            padding: 5px;
+        }
+        button {
+            padding: 10px;
+            width: 60px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:active {
+            background-color: #0056b3;
+        }
+        #resultado {
+            margin-top: 10px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="inputNumero" placeholder="0">
+        <br>
+        <button onclick="calculadora.operar('suma')">+</button>
+        <button onclick="calculadora.operar('resta')">-</button>
+        <button onclick="calculadora.operar('multiplicacion')">×</button>
+        <button onclick="calculadora.operar('division')">÷</button>
+        <br>
+        <button onclick="calculadora.igual()">=</button>
+        <button onclick="calculadora.limpiar()">C</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
