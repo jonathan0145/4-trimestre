@@ -71,10 +71,10 @@ main{
 .content-item.active {
     display: block;
 }
-form{
+/* form{
     
     
-}
+} */
 #informacion_login{
     width: 40%;
     height: 80%;
