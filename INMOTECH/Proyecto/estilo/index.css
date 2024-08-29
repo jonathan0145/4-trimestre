@@ -39,43 +39,76 @@ header .banner-container{
 }
 
 .banner-button{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(12, 8, 55, 0.799);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    border-radius: 30px;
 }
 
 .banner-button.active{
-    background-color: rgba(255, 255, 255, 0.7);
-    color: black;
+    background-color: yellow;
+    color: rgba(12, 8, 55, 0.7); 
+}
+
+#contenedor-logo{
+    border: 1px solid red;
 }
 
 /*Logo*/
 #logo{
-    width: 120px;
-    position:absolute;
-    bottom: 100px;
-    left: 10px;
+    width: 13%;
     box-shadow: 2px 2px 5px rgb(145, 139, 243);
     border-radius: 10%;
 }
 
 /*titulo*/
 header h1{
+    width: 13%;
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-size: 20px;
+    font-size: 2.1vw;
     margin: 30px 100PX 0 0;
     text-shadow: 2px 2px 5px rgb(145, 139, 243);
-    position: absolute;
-    bottom: 70px;
-    left: 5px;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
+    background-color: rgba(82, 69, 217, 0.7);
+    text-align: center;
+    border-radius: 20px;
+}
+
+/*queries*/
+@media(min-height: 700px){
+    .banner-image{
+        height: 850px;
+    }
+    #logo{
+        bottom: 150px;
+        left: 15px;
+    }
+    header h1{
+        bottom: 100px;
+        left: 15px;
+    }
+}
+
+/* menu */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+a{
+    color: blue;
+    text-decoration: none;
 }
