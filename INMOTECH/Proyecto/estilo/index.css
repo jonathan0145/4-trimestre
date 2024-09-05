@@ -54,10 +54,10 @@ header .banner-container{
 }
 
 #contenedor-logo{
-    width: 15%;
-    position: relative;
-    bottom: 400px;
+    width: 288px;
+    position:relative;
     left: 20px;
+    bottom: 400px;
     border: 1px solid transparent;
 }
 
@@ -67,7 +67,6 @@ header .banner-container{
     box-shadow: 2px 2px 5px rgb(145, 139, 243);
     border-radius: 10%;
 }
-
 /*titulo*/
 header h1{
     width: 100%;
@@ -75,15 +74,21 @@ header h1{
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-size: 2.1vw;
+    font-size: clamp(24px,2.1vw,40.32px);
     margin: 30px 100PX 0 0;
     text-shadow: 2px 2px 5px rgb(145, 139, 243);
     background-color: rgba(82, 69, 217, 0.7);
     text-align: center;
     border-radius: 20px;
 }
-
 /*queries*/
+@media(max-width: 1140px){
+    #contenedor-logo{
+        width: 168.750px;
+        left: 40%;
+        bottom:250px;
+    }
+}
 @media(min-height: 700px){
     .banner-image{
         height: 850px;
@@ -95,6 +100,11 @@ header h1{
     header h1{
         bottom: 100px;
         left: 15px;
+    }
+}
+@media(max-width: 500px){
+    #contenedor-logo{
+        left: 33.5%;
     }
 }
 
