@@ -62,20 +62,30 @@ main{
     background-color: rgb(64, 64, 145, 0.9);
     box-shadow: 0px 5px 5px rgb(145, 139, 243);
     text-shadow: 2px 2px 5px rgb(145, 139, 243);
-    /* border: 0px; */
 }
 
 .content-item {
-    display: none;
+display: none;
 }
 
 .content-item.active {
     display: block;
 }
-/* form{
-    
-    
-} */
+#f1 label{
+    width: 40px;
+    height: 40px;
+}
+#f1 label img{
+    width: 40px;
+    height: 40px;
+}
+#f1 input{
+    width: 85%;
+    height: 40px;
+}
+#f1 #ingresar{
+    width: 40%;
+}
 #informacion_login{
     width: 35%;
     height: 78%;

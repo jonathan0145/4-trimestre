@@ -1,12 +1,12 @@
 function showContent(contentType) {
-    var loginContent = document.getElementById('loginContent');
+    var loginc = document.getElementById('loginc');
     var registerContent = document.getElementById('registerContent');
 
     if (contentType === 'login') {
-        loginContent.style.display = 'block';
-        registerContent.style.display = 'none';
+        loginc.style.display = 'block';
+        registerc.style.display = 'none';
     } else if (contentType === 'register') {
-        loginContent.style.display = 'none';
+        loginc.style.display = 'none';
         registerContent.style.display = 'block';
     }
 }
