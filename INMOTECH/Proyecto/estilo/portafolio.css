@@ -1,0 +1,391 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+header{
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(64, 64, 145, 1);
+}
+nav{
+    height: 100%;
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+    margin-top: 1px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(64, 64, 145, 1);
+    border-left: 0px;
+    padding: 17px 40px;
+    background-color: rgba(82, 69, 217, 0.1);
+    font-size: 20px;
+}
+.banner-container{
+    position: relative;
+    width: 100%;
+    height: 870px;
+    overflow: hidden;
+}
+
+/* Estilo de las imagenes dentro del banner */
+.banner-image{
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-image.active{
+    display: block;
+}
+
+/* Estilo de los botones */
+.banner-buttons{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform:translateX(-50%);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.banner-button{
+    background-color: rgba(12, 8, 55, 0.799);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.banner-button.active{
+    background-color: rgb(145, 139, 243);
+    color: rgba(12, 8, 55, 0.7);
+}
+.banner-container h1{
+    width: 240px;
+    height: 50px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: clamp(24px,40.32px);
+    margin: 30px 100PX 0 0;
+    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    background-color: rgba(82, 69, 217, 0.7);
+    text-align: center;
+    border-radius: 20px;
+}
+
+#contenedor-logo{
+    width: 240px;
+    position:absolute;
+    left: 20px;
+    top: 480px;
+    border: 1px solid transparent;
+}
+
+/*Logo*/
+#logo{
+    width: 100%;
+    box-shadow: 0px 0px 10px 5px rgb(145, 139, 243);
+    border-radius: 10%;
+}
+#buscar {
+    width: 98%;
+    padding: 1.01%;
+    height: 120px;
+    margin: 0;
+    background-color: rgb(64, 64, 145, 0.9);
+}
+
+#busqueda {
+    width: 40%;
+    height: 120px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(64, 64, 145, 0.9);
+    border-radius: 30px;
+}
+
+#filtros {
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius:30px 30px 0px 0px;
+}
+#filtros button{
+    width: 20%;
+    border: none;
+    background-color: rgb(64, 64, 145, 0.9);
+    font-size: 18px;
+}
+#filtros #bizq{
+    border-radius: 30px 0px 0px 0px;
+}
+#filtros #bder{
+    border-radius: 0px 30px 0px 0px;
+}
+#barra-busqueda {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color:rgb(64, 64, 145, 0.9);
+    border-radius: 0px 0px 30px 30px;
+}
+#filtros button:hover{
+    background-color: rgb(138, 138, 145);
+}
+
+#barra-busqueda img {
+    width: 60px;
+    height: 60px;
+    margin-right: 0px;
+    position: relative;
+    right: 1px;
+    bottom: 10px;
+    border-radius: 0px 0px 0px 30px;
+}
+
+#barra-busqueda input[type="search"] {
+    width: 92%;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 0px 0px 30px 0px;
+    margin: 0;
+    padding-left: 10px;
+    position: relative;
+    bottom: 10px;
+    font-size: 30px;
+}
+#ordenar {
+    width: 55%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: relative;
+    left: 800px;
+    bottom: 120px;
+}
+#ordenar #b1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#ordenar #b2{
+    width: 30%;
+    height: 100%;;
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+}
+
+#btn-ordenar {
+    padding: 20px 40px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+#lista-ordenar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position:absolute;
+    top: 40px;
+    left: 0;
+    width: 150px;
+    border: 1px solid #ccc;
+    background-color: white;
+    display: none; /* Oculta el menú por defecto */
+}
+
+#lista-ordenar li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#lista-ordenar li:hover {
+    background-color: #f0f0f0;
+}
+
+.mostrar {
+    display: block !important; /* Clase para mostrar el menú */
+}
+#filtross{
+    padding: 20px 58px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 30px;
+}
+#como{
+    padding: 20px 58px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 30px; 
+    margin-bottom: 10px;
+}
+#centro{
+    padding: 20px 58px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 30px; 
+}
+#inmuebles{
+    width: 94%;
+    height: 2000px;
+    background-color: black;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px;
+}
+
+.carta {
+    position: relative;
+    width: calc(33.333% - 20px);
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.carta:hover {
+    transform: scale(1.05); /* La carta crece al pasar el ratón */
+    height: 500px; /* Aumenta la altura */
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    transition: height 0.3s ease;
+}
+
+.contenido h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contenido p {
+    font-size: 14px;
+}
+.info-adicional {
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden; /* Oculta inicialmente la información adicional */
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.info-adicional p {
+    margin-right: 10px;
+    white-space: nowrap; /* Evita que el texto haga salto de línea */
+}
+
+.carta:hover .info-adicional {
+    visibility: visible; /* Muestra la información adicional al pasar el mouse */
+}
+
+/* Ajuste para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .carta {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .carta {
+        width: 100%;
+    }
+}
+footer{
+    width: 100%;
+    height: 150px;
+    background-image: url(../multimedia/imagenes/fondo_login.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 250%;
+}
+footer #oscu{
+    width: 100%;
+    height: 150px;
+    background-color:rgba(247, 243, 243, 0.8);
+}
+footer ul{
+    width:95%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+}
+footer ul .b{
+    flex-direction: row;
+    text-align: center;
+}
+footer p{
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 20px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    color: black;
+}
+footer a:hover{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}

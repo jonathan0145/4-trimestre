@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar {
+    width: 18px; /* Ancho de la barra de scroll */
+    border-radius:100px; /* Bordes redondeados */
+}
+
+/* Estilo de la pista de scroll */
+body::-webkit-scrollbar-track {
+    background: rgb(145, 139, 243); /* Color de fondo de la pista */
+    border-radius:100px; /* Bordes redondeados */
+}
+body::-webkit-scrollbar-thumb {
+    background: rgb(101, 98, 163); /* Color del pulgar */
+    border-radius:100px; /* Bordes redondeados */
+    border: 2px solid rgb(49, 46, 104); /* Bordes alrededor del pulgar */
+}
+/* Estilo del pulgar cuando se hace hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(22, 21, 46); /* Color del pulgar al pasar el mouse */
+}
+header{
+    display: flex;
+    width: 100%; /* Ocupa todo el ancho de la página */
+    height: 700px; /* Ocupa la altura completa de la ventana */
+    background-color: red; /* Color de fondo del header */
+}
+header nav {
+    width: 30%; /* El nav ocupará el 30% del ancho del header */
+    height: 700px;
+    background-color:rgb(64, 64, 145, 0.9);
+    display: flex;
+    flex-direction: column;
+}
+header nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    height: 100%; /* El ul ocupa el 100% del nav */
+}
+
+header nav ul li {
+    display: flex;
+    align-items: center; /* Alinea el contenido del li en el centro verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Color del texto */
+    width: 100%; /* El enlace ocupa todo el ancho del li */
+    text-align: center; /* El texto se centra dentro del enlace */
+    padding: 23px 0; /* Añade espacio interno */
+    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+header nav ul li a:hover{
+    background-color: rgb(138, 138, 145);
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+#imagenprincipal {
+    flex: 1; /* El div ocupa el espacio restante del header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+#imagenprincipal img {
+    width: 1332px;
+    height: 702px; /* La imagen se ajusta proporcionalmente */
+}
+#navegacion{
+    height: 95px;
+}
+/* menu */
+#navegacion{
+    width: 100%;
+    height: 95px;
+    background-color:rgb(64, 64, 145, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-weight: bold;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.5vw;
+}
+#navegacion ul{
+    width: 100%;
+    margin-top: 30px;
+}
+#navegacion ul li{
+    display: inline-block;
+    padding: 0 3%;
+}
+#navegacion a{
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    color: black;
+}
+#navegacion a:hover{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.seccion:nth-child(odd) {
+    background-color: black;
+    color: white; /* Cambiar el texto a blanco para mejor contraste */
+    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+}
+
+.seccion:nth-child(even) {
+    background-color: rgb(64, 64, 145, 0.9);
+    color: white;
+    text-shadow: 2px 2px 5px rgb(7, 7, 15);
+}
+
+.seccion {
+    padding: 20px;
+    margin: 0px 0;
+    font-family: Arial, sans-serif;
+}
+
+.seccion h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;}
+
+.seccion p {
+    line-height: 1.6;
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+footer{
+    width: 100%;
+    height: 150px;
+    background-image: url(../multimedia/imagenes/fondo_login.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+footer #oscu{
+    width: 100%;
+    height: 150px;
+    background-color:rgba(247, 243, 243, 0.8);
+}
+footer ul{
+    width:95%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+}
+footer ul .b{
+    flex-direction: row;
+    text-align: center;
+}
+footer p{
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 20px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    color: black;
+}
+footer a:hover{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}

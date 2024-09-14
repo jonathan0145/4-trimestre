@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/portafolio.css">
+    <title>Inmotech/portafolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Regresar</a></li>
+                <li><a href="">Banner</a></li>
+                <li><a href="">Mapa</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="banner-container">
+        <a href="./banner.html"><img src="../multimedia/imagenes/imagenb1.webp" alt="imagen 1" class="banner-image active"></a>
+        <img src="../multimedia/imagenes/imagenb2.webp" alt="imagen 2" class="banner-image">
+        <img src="../multimedia/imagenes/imagenb1.webp" alt="imagen 3" class="banner-image">
+        <img src="../multimedia/imagenes/imagenb2.webp" alt="imagen 4" class="banner-image">
+        <img src="../multimedia/imagenes/imagenb1.webp" alt="imagen 5" class="banner-image">
+        <img src="../multimedia/imagenes/imagenb2.webp" alt="imagen 6" class="banner-image">
+        <img src="../multimedia/imagenes/imagenb1.webp" alt="imagen 7" class="banner-image">
+        <img src="../multimedia/imagenes/imagenb2.webp" alt="imagen 8" class="banner-image">
+        <img src="../multimedia/imagenes/imagenb1.webp" alt="imagen 9" class="banner-image">
+        <img src="../multimedia/imagenes/imagenb2.webp" alt="imagen 10" class="banner-image">
+    
+        <!-- Botones para cambiar de imagen -->
+        <div class="banner-buttons">
+            <button class="banner-button active" onclick="showImage(0)">01</button>
+            <button class="banner-button" onclick="showImage(1)">02</button>
+            <button class="banner-button" onclick="showImage(2)">03</button>
+            <button class="banner-button" onclick="showImage(3)">04</button>
+            <button class="banner-button" onclick="showImage(4)">05</button>
+            <button class="banner-button" onclick="showImage(5)">06</button>
+            <button class="banner-button" onclick="showImage(6)">07</button>
+            <button class="banner-button" onclick="showImage(7)">08</button>
+            <button class="banner-button" onclick="showImage(8)">09</button>
+            <button class="banner-button" onclick="showImage(9)">10</button>
+        </div>
+        <div id="contenedor-logo">
+            <img id="logo" src="../multimedia/imagenes/logo_200x200.png" alt="logo inmotech">
+            <h1>INMOTECH</h1>
+        </div>
+    </div>
+   
+    <div id="buscar">
+        <div id="busqueda">
+    
+            <!-- Filtro de búsqueda en la parte superior -->
+            <div id="filtros">
+                <button id="bizq">Apartamentos</button>
+                <button>Apartaestudios</button>
+                <button>Casas</button>
+                <button>Lotes</button>
+                <button id="bder">Todos</button>
+            </div>
+    
+            <!-- Búsqueda en la parte inferior -->
+            <div id="barra-busqueda">
+                <img src="../multimedia/iconos/busqueda.png" alt="Icono de búsqueda">
+                <input type="search" placeholder="¿Dónde deseas adquirir tu inmueble?">
+            </div>
+    
+        </div>
+         <!-- Nuevo div para desplegar la lista -->
+        <div id="ordenar">
+            <div id="b1">
+                <button id="btn-ordenar">Ordenar por</button>
+                <ul id="lista-ordenar">
+                    <li>Recientes</li>
+                    <li>Menor precio</li>
+                    <li>Mayor precio</li>
+                </ul>
+                <button id="filtross">filtros</button>
+            </div>
+            <div id="b2">
+                <a href="../pagina/comocomprar.html"><button id="como">¿Como comprar?</button></a>
+                <a href="../pagina/centro.html"><button id="centro">centro de ayuda</button></a>
+            </div>
+        </div>
+    </div>
+    <div id="inmuebles">
+        <div class="carta">
+            <img src="../multimedia/imagenes/imagenb1.webp" alt="Imagen Apartamento" class="imagen">
+            <div class="contenido">
+                <h3>BOGOTÁ, D.C. NORTE - SUBA</h3>
+                <p>Apartamento para venta en Britalia Norte</p>
+                <p><strong>Precio Venta: $410.000.000</strong></p>
+                <div class="info-adicional">
+                    <p>Área: 75m<sup>2</sup></p>
+                    <p>Habitaciones: 3</p>
+                    <p>Baños: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../multimedia/imagenes/imagenb1.webp" alt="Imagen Apartamento" class="imagen">
+            <div class="contenido">
+                <h3>BOGOTÁ, D.C. NORTE - SUBA</h3>
+                <p>Apartamento para venta en Britalia Norte</p>
+                <p><strong>Precio Venta: $410.000.000</strong></p>
+                <div class="info-adicional">
+                    <p>Área: 75m<sup>2</sup></p>
+                    <p>Habitaciones: 3</p>
+                    <p>Baños: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../multimedia/imagenes/imagenb1.webp" alt="Imagen Apartamento" class="imagen">
+            <div class="contenido">
+                <h3>BOGOTÁ, D.C. NORTE - SUBA</h3>
+                <p>Apartamento para venta en Britalia Norte</p>
+                <p><strong>Precio Venta: $410.000.000</strong></p>
+                <div class="info-adicional">
+                    <p>Área: 75m<sup>2</sup></p>
+                    <p>Habitaciones: 3</p>
+                    <p>Baños: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../multimedia/imagenes/imagenb1.webp" alt="Imagen Apartamento" class="imagen">
+            <div class="contenido">
+                <h3>BOGOTÁ, D.C. NORTE - SUBA</h3>
+                <p>Apartamento para venta en Britalia Norte</p>
+                <p><strong>Precio Venta: $410.000.000</strong></p>
+                <div class="info-adicional">
+                    <p>Área: 75m<sup>2</sup></p>
+                    <p>Habitaciones: 3</p>
+                    <p>Baños: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../multimedia/imagenes/imagenb1.webp" alt="Imagen Apartamento" class="imagen">
+            <div class="contenido">
+                <h3>BOGOTÁ, D.C. NORTE - SUBA</h3>
+                <p>Apartamento para venta en Britalia Norte</p>
+                <p><strong>Precio Venta: $410.000.000</strong></p>
+                <div class="info-adicional">
+                    <p>Área: 75m<sup>2</sup></p>
+                    <p>Habitaciones: 3</p>
+                    <p>Baños: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../multimedia/imagenes/imagenb1.webp" alt="Imagen Apartamento" class="imagen">
+            <div class="contenido">
+                <h3>BOGOTÁ, D.C. NORTE - SUBA</h3>
+                <p>Apartamento para venta en Britalia Norte</p>
+                <p><strong>Precio Venta: $410.000.000</strong></p>
+                <div class="info-adicional">
+                    <p>Área: 75m<sup>2</sup></p>
+                    <p>Habitaciones: 3</p>
+                    <p>Baños: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../multimedia/imagenes/imagenb1.webp" alt="Imagen Apartamento" class="imagen">
+            <div class="contenido">
+                <h3>BOGOTÁ, D.C. NORTE - SUBA</h3>
+                <p>Apartamento para venta en Britalia Norte</p>
+                <p><strong>Precio Venta: $410.000.000</strong></p>
+                <div class="info-adicional">
+                    <p>Área: 75m<sup>2</sup></p>
+                    <p>Habitaciones: 3</p>
+                    <p>Baños: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../multimedia/imagenes/imagenb1.webp" alt="Imagen Apartamento" class="imagen">
+            <div class="contenido">
+                <h3>BOGOTÁ, D.C. NORTE - SUBA</h3>
+                <p>Apartamento para venta en Britalia Norte</p>
+                <p><strong>Precio Venta: $410.000.000</strong></p>
+                <div class="info-adicional">
+                    <p>Área: 75m<sup>2</sup></p>
+                    <p>Habitaciones: 3</p>
+                    <p>Baños: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../multimedia/imagenes/imagenb1.webp" alt="Imagen Apartamento" class="imagen">
+            <div class="contenido">
+                <h3>BOGOTÁ, D.C. NORTE - SUBA</h3>
+                <p>Apartamento para venta en Britalia Norte</p>
+                <p><strong>Precio Venta: $410.000.000</strong></p>
+                <div class="info-adicional">
+                    <p>Área: 75m<sup>2</sup></p>
+                    <p>Habitaciones: 3</p>
+                    <p>Baños: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../multimedia/imagenes/imagenb1.webp" alt="Imagen Apartamento" class="imagen">
+            <div class="contenido">
+                <h3>BOGOTÁ, D.C. NORTE - SUBA</h3>
+                <p>Apartamento para venta en Britalia Norte</p>
+                <p><strong>Precio Venta: $410.000.000</strong></p>
+                <div class="info-adicional">
+                    <p>Área: 75m<sup>2</sup></p>
+                    <p>Habitaciones: 3</p>
+                    <p>Baños: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../multimedia/imagenes/imagenb1.webp" alt="Imagen Apartamento" class="imagen">
+            <div class="contenido">
+                <h3>BOGOTÁ, D.C. NORTE - SUBA</h3>
+                <p>Apartamento para venta en Britalia Norte</p>
+                <p><strong>Precio Venta: $410.000.000</strong></p>
+                <div class="info-adicional">
+                    <p>Área: 75m<sup>2</sup></p>
+                    <p>Habitaciones: 3</p>
+                    <p>Baños: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../multimedia/imagenes/imagenb1.webp" alt="Imagen Apartamento" class="imagen">
+            <div class="contenido">
+                <h3>BOGOTÁ, D.C. NORTE - SUBA</h3>
+                <p>Apartamento para venta en Britalia Norte</p>
+                <p><strong>Precio Venta: $410.000.000</strong></p>
+                <div class="info-adicional">
+                    <p>Área: 75m<sup>2</sup></p>
+                    <p>Habitaciones: 3</p>
+                    <p>Baños: 2</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div id="oscu">
+            <ul>
+                <li class="b"><a href="">INMOTECH 2024 Todos los derechos reservados</a></li>
+                <li class="b"><a href="">Terminos y condiciones</a></li>
+                <li class="b"><a href="">Aviso de privacidad</a></li>
+                <li><a href="">Cookies</a></li>
+            </ul>
+            <p>Usar este sitio implica que aceptas nuestras politicas y terminos, Aviso de privacidad y politica de datos. prohibida su reproduccion total o parcial, asi como su traduccion a cualquier idioma sin autorizacion escrita de su titular.</p>
+        </div>
+    </footer>
+    <script src="../javascript/portafolio.js"></script>
+</body>
+</html>

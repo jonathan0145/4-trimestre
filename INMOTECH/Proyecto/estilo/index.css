@@ -7,6 +7,41 @@ body{
     font-family: Arial, sans-serif;
     background-color: orange;
 }
+#resolvemos ul::-webkit-scrollbar,
+.tarjetas_testimonios::-webkit-scrollbar,
+#inmotech p::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.tarjetas_testimonios .card .back p::-webkit-scrollbar {
+    width: 20px; /* Ancho de la barra de scroll */
+    border-radius:100px; /* Bordes redondeados */
+}
+
+/* Estilo de la pista de scroll */
+#resolvemos ul::-webkit-scrollbar-track,
+.tarjetas_testimonios::-webkit-scrollbar-track,
+#inmotech p::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+.tarjetas_testimonios .card .back p::-webkit-scrollbar-track {
+    background: rgb(145, 139, 243); /* Color de fondo de la pista */
+    border-radius:100px; /* Bordes redondeados */
+}
+#resolvemos ul::-webkit-scrollbar-thumb,
+.tarjetas_testimonios::-webkit-scrollbar-thumb,
+#inmotech p::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+.tarjetas_testimonios .card .back p::-webkit-scrollbar-thumb {
+    background: rgb(49, 46, 104); /* Color del pulgar */
+    border-radius:100px; /* Bordes redondeados */
+    border: 2px solid rgb(49, 46, 104); /* Bordes alrededor del pulgar */
+}
+/* Estilo del pulgar cuando se hace hover */
+#resolvemos ul::-webkit-scrollbar-thumb:hover,
+.tarjetas_testimonios::-webkit-scrollbar-thumb:hover,
+#inmotech p::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+.tarjetas_testimonios .card .back p::-webkit-scrollbar-thumb:hover {
+    background: rgb(22, 21, 46); /* Color del pulgar al pasar el mouse */
+}
 header{
     width: 100%;
     height: 850px;
@@ -26,9 +61,8 @@ header .banner-container{
 .banner-image{
     display: none;
     width: 100%;
-    height: 0px;
     object-fit: cover;
-    display: none;
+
 }
 
 .banner-image.active{
@@ -62,10 +96,10 @@ header .banner-container{
 }
 
 #contenedor-logo{
-    width: 288px;
+    width: 240px;
     position:absolute;
     left: 20px;
-    top: 316px;
+    top: 480px;
     border: 1px solid transparent;
 }
 
@@ -77,7 +111,7 @@ header .banner-container{
 }
 /*titulo*/
 header h1{
-    width: 288px;
+    width: 240px;
     height: 50px;
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
@@ -190,13 +224,13 @@ a:hover{
     border-radius:20px 0px 0px 0px;
     background-image: url(../multimedia/imagenes/imagenb1.webp);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 50% 100%;
 }
 #arriba2{
     border-radius:0px 20px 0px 0px;
     background-image: url(../multimedia/imagenes/imagen3.webp);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 50% 100%;
 }
 #abajo{
     flex: 1 1 100%;
@@ -207,7 +241,7 @@ a:hover{
     background-image: url(../multimedia/imagenes/imagenb2.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 #as div{
     width: 100%;
@@ -440,19 +474,18 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    bottom: 505px;
+    bottom: 475px;
 }
 footer #oscu{
-    width: 97%;
+    width: 100%;
     height: 150px;
     background-color:rgba(247, 243, 243, 0.8);
 }
 footer ul{
-    width:100%;
+    width:95%;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 20px;

@@ -44,48 +44,109 @@ main{
     top: 10%;
     text-align: center;
     width: 40%;
-    height: 80%;
+    height: 83%;
     background-color: rgb(64, 64, 145, 0.9);
-    padding-top: 1.3%;
+    padding-top: 0;
 }
 
 .button-group {
     width: 100%;
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .button-group button {
     width: 49.5%;
-    height: 40px;
+    height: 50px;
     font-size: 25px;
     cursor: pointer;
-    background-color: rgb(64, 64, 145, 0.9);
-    box-shadow: 0px 5px 5px rgb(145, 139, 243);
+    background-color:rgb(64, 64, 145, 0.1);
+    margin:0px;
+    border: none;
     text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.button-group button:hover{
+    background-color: rgb(138, 138, 145);
+    box-shadow: 0px 1px 8px 0px black;
+}
+.button-group #loginBtn{
+    border-radius: 30px 0 0 0;
+}
+.button-group #registerBtn{
+    border-radius: 0px 30px 0 0;
 }
 
 .content-item {
 display: none;
 }
 
+.content-item h2{
+    margin: 0;
+    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 40px;
+}
 .content-item.active {
     display: block;
 }
-#f1 label{
-    width: 40px;
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+form label{
+    width: 10%;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-radius: 50px;
+}
+label img{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(9, 23, 82);
+}
+/* Estilos para los inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 80%;
     height: 40px;
+    border:1px solid white;
+    border-radius: 3px;
+    position: relative;
+    left: 30px;
+    bottom: 58px;
+    font-size: 30px;
 }
-#f1 label img{
-    width: 40px;
-    height: 40px;
+form button {
+    width: 98%;
+    height: 60px;
+    background-color: rgb(138, 138, 145);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 120px;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
-#f1 input{
-    width: 85%;
-    height: 40px;
+#registrar{
+    margin-top: 20px;
 }
-#f1 #ingresar{
-    width: 40%;
-}
+
 #informacion_login{
     width: 35%;
     height: 78%;
