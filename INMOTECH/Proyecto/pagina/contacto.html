@@ -19,15 +19,81 @@
             </ul>
         </nav>
     </header>
-    <div class="cseciones">
+     <!-- Primer div: Formulario de contacto -->
+     <div class="cseciones">
+        <form>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-    </div>
-    <div class="cseciones">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
 
-    </div>
-    <div class="cseciones">
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" required>
 
+            <label for="dependencia">Dependencia:</label>
+            <input type="text" id="dependencia" name="dependencia" required>
+
+            <label for="tipo">Tipo de solicitud:</label>
+            <select id="tipo" name="tipo">
+                <option value="consulta">Consulta</option>
+                <option value="queja">Queja</option>
+                <option value="reclamación">Reclamación</option>
+            </select>
+
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" name="localidad" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <label>
+                <input type="checkbox" id="terminos" name="terminos" required>
+                Al hacer clic en el siguiente botón, declaras que has leído los términos y condiciones del portal y que lo aceptas en su totalidad.
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
     </div>
+
+    <!-- Segundo div: Puntos de atención al cliente -->
+    <div class="cseciones">
+        <h2>Puntos de atención al cliente</h2>
+        <p>Nuestro objetivo es ofrecer un excelente servicio, respaldo, transparencia y comercializar ágilmente su propiedad en materia de arriendos, venta y avalúos.</p>
+        
+        <div class="punto-atencion">
+            <div class="info">
+                <h3>Parque Central Bavaria</h3>
+                <p>Dirección: Calle 30 #6-50</p>
+                <p>Teléfono: +57 1 234 5678</p>
+                <p>Horario de atención: Lunes a Viernes de 8:00 a.m. a 5:00 p.m.</p>
+            </div>
+            <div class="mapa">
+                <!-- Integración de Google Maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.352779530706!2d106.65588851482944!3d10.762622992329826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529294d7801d5%3A0x504b9cb891fa0243!2sSaigon%20Central%20Post%20Office!5e0!3m2!1sen!2s!4v1638298457890!5m2!1sen!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="punto-atencion">
+            <div class="info">
+                <h3>Parque Central Bavaria</h3>
+                <p>Dirección: Calle 30 #6-50</p>
+                <p>Teléfono: +57 1 234 5678</p>
+                <p>Horario de atención: Lunes a Viernes de 8:00 a.m. a 5:00 p.m.</p>
+            </div>
+            <div class="mapa">
+                <!-- Integración de Google Maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.352779530706!2d106.65588851482944!3d10.762622992329826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529294d7801d5%3A0x504b9cb891fa0243!2sSaigon%20Central%20Post%20Office!5e0!3m2!1sen!2s!4v1638298457890!5m2!1sen!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tercer div: Testimonios -->
+    <div class="cseciones">
+        <textarea id="testimonio" placeholder="Escribe tu testimonio aquí..."></textarea>
+        <button type="button">Publicar</button>
+    </div>
+
     <footer>
         
     </footer>

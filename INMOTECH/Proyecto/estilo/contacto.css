@@ -39,16 +39,66 @@ a:hover{
     color: white;
     text-shadow: 2px 2px 5px black;
 }
-.cseciones{
-    height: 500px;
-    background-color:black;
-    border-bottom: 1px solid white;
+.cseciones {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
 }
-footer{
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form select, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.punto-atencion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.punto-atencion .info {
+    width: 48%;
+}
+
+.punto-atencion .mapa {
+    width: 48%;
+}
+
+textarea {
     width: 100%;
     height: 150px;
-    background-image: url(../multimedia/imagenes/fondo_login.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: 505px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
 }
