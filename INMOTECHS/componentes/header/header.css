@@ -1,0 +1,137 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+/*! encabezado 1*/
+#headers{
+    width: 100%;
+    height: clamp(130px,13.54vw, 260px);
+    background-color: rgba(130, 14, 207, 0.765);
+    position:relative;/* predeterminado es static otros valores fixed,sticky, relative y absolute*/
+    margin: 0px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+}
+/*? encabezado imagenes*/
+#headers #imgs{
+    width: clamp(105.3px, 10.5vw,201.6px);
+    min-width: 100px;
+    position: relative;
+    top:0px;
+    left: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(145, 139, 243);
+    height: auto;
+}
+/*? encabezado titulo*/
+#headers #h1s{
+    width: 750px;
+    height: auto;
+    position: relative;
+    bottom: 0px;
+    left: 30px;
+    margin-bottom: 0px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: clamp(58.35px, 6.70vw ,128.64px);
+    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+}
+@media screen and (max-width: 1000px){
+    body{
+        background-color: red;
+    }
+    header{
+        height: 180px;
+    }
+    header img{
+        width: 8em;
+    }
+    header h1{
+        font-size: 4em;
+        bottom: 90px;
+        left: 170px;
+    }
+}
+@media screen and (max-width: 570px){
+    header h1{
+        font-size: 3.3em;
+        bottom:70px;
+        left: 160px;
+    }
+}
+/*! encabezado2*/
+#headers1{
+    width: 100%;
+    height: 950px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+/*? imagenes clase .banner-image*/
+a .banner-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    position: absolute;
+}
+/*? ¿para que sirve el .active?*/
+.banner-image.active{
+    display: block;
+}
+/*? Estilo de los botones */
+.banner-buttons{
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform:translateX(-50%);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+/*? botones*/
+.banner-button{
+    background-color: rgba(12, 8, 55, 0.799);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.banner-button.active{
+    background-color: rgb(145, 139, 243);
+    color: rgba(12, 8, 55, 0.7);
+}
+#contenedor-logo{
+    width: 240px;
+    position:absolute;
+    left: 20px;
+    top: 480px;
+    border: 1px solid transparent;
+}
+
+/*Logo*/
+#logo{
+    width: 100%;
+    box-shadow: 0px 0px 10px 5px rgb(145, 139, 243);
+    border-radius: 10%;
+}
+/*titulo*/
+#headers1 h1{
+    width: 240px;
+    height: 50px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: clamp(24px,40.32px);
+    margin: 30px 100PX 0 0;
+    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    background-color: rgba(82, 69, 217, 0.7);
+    text-align: center;
+    border-radius: 20px;
+}

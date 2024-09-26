@@ -1,0 +1,142 @@
+body{
+    width: 100%;
+    height: 2500px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+#resolvemos ul::-webkit-scrollbar,
+.tarjetas_testimonios::-webkit-scrollbar,
+#inmotech p::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.tarjetas_testimonios .card .back p::-webkit-scrollbar {
+    width: 20px; /* Ancho de la barra de scroll */
+}
+
+/* Estilo de la pista de scroll */
+#resolvemos ul::-webkit-scrollbar-track,
+.tarjetas_testimonios::-webkit-scrollbar-track,
+#inmotech p::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+.tarjetas_testimonios .card .back p::-webkit-scrollbar-track {
+    background: rgb(145, 139, 243); /* Color de fondo de la pista */
+}
+#resolvemos ul::-webkit-scrollbar-thumb,
+.tarjetas_testimonios::-webkit-scrollbar-thumb,
+#inmotech p::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+.tarjetas_testimonios .card .back p::-webkit-scrollbar-thumb {
+    background: rgb(49, 46, 104); /* Color del pulgar */
+    border-radius:100px; /* Bordes redondeados */
+    border: 2px solid rgb(49, 46, 104); /* Bordes alrededor del pulgar */
+}
+/* Estilo del pulgar cuando se hace hover */
+#resolvemos ul::-webkit-scrollbar-thumb:hover,
+.tarjetas_testimonios::-webkit-scrollbar-thumb:hover,
+#inmotech p::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+.tarjetas_testimonios .card .back p::-webkit-scrollbar-thumb:hover {
+    background: rgb(22, 21, 46); /* Color del pulgar al pasar el mouse */
+}
+header{
+    width: 100%;
+    height: 950px;
+    margin: 0px;
+    padding: 0;
+    background-color:red;
+}
+
+/* Estilo de las imagenes dentro del banner */
+a .banner-image{
+    width: 100%;
+    height: 950px;
+    object-fit:cover;
+    display: none;
+    position: absolute;
+}
+
+.banner-image.active{
+    display: block;
+}
+
+/* Estilo de los botones */
+.banner-buttons{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform:translateX(-50%);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.banner-button{
+    background-color: rgba(12, 8, 55, 0.799);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.banner-button.active{
+    background-color: rgb(145, 139, 243);
+    color: rgba(12, 8, 55, 0.7);
+}
+
+#contenedor-logo{
+    width: 240px;
+    position:absolute;
+    left: 20px;
+    top: 590px;
+    border: 1px solid transparent;
+}
+
+/*Logo*/
+#logo{
+    width: 100%;
+    box-shadow: 0px 0px 10px 5px rgb(145, 139, 243);
+    border-radius: 10%;
+}
+/*titulo*/
+header h1{
+    width: 240px;
+    height: 50px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: clamp(24px,40.32px);
+    margin: 30px 100PX 0 0;
+    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    background-color: rgba(82, 69, 217, 0.7);
+    text-align: center;
+    border-radius: 20px;
+}
+/*queries*/
+@media(max-width: 1140px){
+    #contenedor-logo{
+        width: 168.750px;
+        left: 40%;
+        bottom:250px;
+    }
+}
+@media(min-height: 700px){
+    .banner-image{
+        height: 850px;
+    }
+    #logo{
+        bottom: 150px;
+        left: 15px;
+    }
+    header h1{
+        bottom: 100px;
+        left: 15px;
+    }
+}
+@media(max-width: 500px){
+    #contenedor-logo{
+        left: 33.5%;
+    }
+}

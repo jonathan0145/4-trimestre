@@ -5,7 +5,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: orange;
 }
 #resolvemos ul::-webkit-scrollbar,
 .tarjetas_testimonios::-webkit-scrollbar,
@@ -13,7 +12,6 @@ body{
 body::-webkit-scrollbar,
 .tarjetas_testimonios .card .back p::-webkit-scrollbar {
     width: 20px; /* Ancho de la barra de scroll */
-    border-radius:100px; /* Bordes redondeados */
 }
 
 /* Estilo de la pista de scroll */
@@ -23,7 +21,6 @@ body::-webkit-scrollbar,
 body::-webkit-scrollbar-track,
 .tarjetas_testimonios .card .back p::-webkit-scrollbar-track {
     background: rgb(145, 139, 243); /* Color de fondo de la pista */
-    border-radius:100px; /* Bordes redondeados */
 }
 #resolvemos ul::-webkit-scrollbar-thumb,
 .tarjetas_testimonios::-webkit-scrollbar-thumb,
@@ -44,25 +41,35 @@ body::-webkit-scrollbar-thumb:hover,
 }
 header{
     width: 100%;
-    height: 850px;
+    height: 950px;
     margin: 0px;
+    padding: 0;
+    background-color:red;
 }
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
-/* banner */
-/* Estilo del header que contiene el banner */
-header .banner-container{
+/* banner-container */
+/* .banner-container{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 950px;
     overflow: hidden;
-}
+    background-color: #fff;
+} */
 
 /* Estilo de las imagenes dentro del banner */
-.banner-image{
-    display: none;
+a .banner-image{
     width: 100%;
-    object-fit: cover;
-
+    height: 950px;
+    object-fit:cover;
+    display: none;
+    position: absolute;
+}
+.banner-image{
+    width: 100%;
+    height: 950px;
+    object-fit:cover;
+    display: none;
+    position: absolute;
 }
 
 .banner-image.active{
