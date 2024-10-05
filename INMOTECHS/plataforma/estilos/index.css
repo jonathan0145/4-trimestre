@@ -1,0 +1,158 @@
+/*cuerpo de la pagina*/
+body{
+    margin: 0;
+}
+
+/*encabezado*/
+header{
+    width: 100%;
+    height: 756px;
+    background-color: rgb(86, 83, 146);
+}
+/*pie de pagina*/
+
+section{
+    width: 100%;
+    height: 756px;
+    background-color: black;
+}
+
+.secciones{
+    background-color: rgb(86, 83, 146); 
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(86, 83, 146);
+
+}
+/* @media (min-width: 1281px) {
+    Estilos para pantallas grandes
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+   
+    Estilos para laptops o pantallas pequeñas
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    Estilos para tabletas
+}
+
+@media (max-width: 767px) {
+    
+   
+    Estilos para teléfonos más grandes
+}
+
+@media (max-width: 480px) {
+    Estilos para móviles pequeños
+} */
+
+/*
+Para utilizar consultas de medioses
+
+1. Dispositivos móviles pequeños (teléfonos):
+Ancho máximo de pantalla: `320pxa480px
+Consulta de medios:
+css
+
+Copiar código
+@media (max-width: 480px) {
+Estilos para móviles pequeños
+}
+
+}
+``
+
+}
+2. Dispositivos móviles medianos (teléfonos grandes):
+Ancho máximo de pantalla: `481pxa767px
+Consulta de medios:
+css
+
+Copiar código
+@media (max-width: 767px) {
+    
+   
+Estilos para teléfonos más grandes
+}
+
+}
+``
+
+}
+3. Tabletas y dispositivos intermedios:
+Ancho de pantalla:`768pxa1024px
+Consulta de medios:
+css
+
+Copiar código
+@media (min-width: 768px) and (max-width: 1024px) {
+    Estilos para tabletas 
+}
+4. Pantallas de escritorio pequeñas o portátiles:
+Ancho de pantalla:`1021025pxa1280px
+Consulta de medios:
+css
+
+Copiar código
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+   
+Estilos para laptops o pantallas pequeñas 
+}
+
+}
+``
+5. Pantallas de escritorio grandes:
+Ancho de pantalla: `1281pxes
+Consulta de medios:
+css
+
+Copiar código
+@media (min-width: 1281px)
+     Estilos para pantallas grandes
+}
+6. Pantallas extra grandes (monitores 4K):
+Ancho de pantalla: más de1920px
+Consulta de medios:
+css
+
+Copiar código
+@media (min-width: 1920px) {
+    Estilos para pantallas 4K
+}
+
+
+7. Orientación de la pantalla:
+Puedes ajustar el diseño dependiendo de si el dispositivo está en orientación vertical ( retrato ) opaisaje):
+css
+
+Copiar código
+@media (orientation: portrait) {
+    
+   
+ Estilos para orientación vertical
+}
+
+
+}
+
+@
+
+}
+
+@media (orientation: landscape) {
+     Estilos para orientación horizontal
+}
+Considerar
+Unidades relativas :px),En orem para que
+Unidades de visualización :Volkswagen(ventana gráficaes​
+Usar estos puntos de ruptura te ayudará a que tu diseño sea responsivosi se
+
+Para más información sobre desarrollo web visita [gptonline.ai/es/]( https ://g.
+
+¡Y no olvides divertirte con [Dibujos Para Colorear]( Dibujos Para Colorear */
