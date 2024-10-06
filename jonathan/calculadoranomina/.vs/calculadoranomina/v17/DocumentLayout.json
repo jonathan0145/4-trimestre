@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Adminsena\\Desktop\\jonathan\\calculadoranomina\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7F3D8-E16D-4E88-994F-FFDD10F0E381}|calculadoranomina\\calculadoranomina.csproj|c:\\users\\adminsena\\desktop\\jonathan\\calculadoranomina\\calculadoranomina\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7F3D8-E16D-4E88-994F-FFDD10F0E381}|calculadoranomina\\calculadoranomina.csproj|solutionrelative:calculadoranomina\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Adminsena\\Desktop\\jonathan\\calculadoranomina\\calculadoranomina\\Program.cs",
+              "RelativeDocumentMoniker": "calculadoranomina\\Program.cs",
+              "ToolTip": "C:\\Users\\Adminsena\\Desktop\\jonathan\\calculadoranomina\\calculadoranomina\\Program.cs",
+              "RelativeToolTip": "calculadoranomina\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T16:07:35.885Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
