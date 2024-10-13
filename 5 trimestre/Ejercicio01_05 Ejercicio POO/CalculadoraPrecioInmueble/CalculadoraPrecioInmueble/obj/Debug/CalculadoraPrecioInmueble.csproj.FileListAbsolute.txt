@@ -1,0 +1,7 @@
+C:\Users\Adminsena\Desktop\4-trimestre\5 trimestre\Ejercicio01_05 Ejercicio POO\CalculadoraPrecioInmueble\CalculadoraPrecioInmueble\bin\Debug\CalculadoraPrecioInmueble.exe.config
+C:\Users\Adminsena\Desktop\4-trimestre\5 trimestre\Ejercicio01_05 Ejercicio POO\CalculadoraPrecioInmueble\CalculadoraPrecioInmueble\bin\Debug\CalculadoraPrecioInmueble.exe
+C:\Users\Adminsena\Desktop\4-trimestre\5 trimestre\Ejercicio01_05 Ejercicio POO\CalculadoraPrecioInmueble\CalculadoraPrecioInmueble\bin\Debug\CalculadoraPrecioInmueble.pdb
+C:\Users\Adminsena\Desktop\4-trimestre\5 trimestre\Ejercicio01_05 Ejercicio POO\CalculadoraPrecioInmueble\CalculadoraPrecioInmueble\obj\Debug\CalculadoraPrecioInmueble.csproj.AssemblyReference.cache
+C:\Users\Adminsena\Desktop\4-trimestre\5 trimestre\Ejercicio01_05 Ejercicio POO\CalculadoraPrecioInmueble\CalculadoraPrecioInmueble\obj\Debug\CalculadoraPrecioInmueble.csproj.CoreCompileInputs.cache
+C:\Users\Adminsena\Desktop\4-trimestre\5 trimestre\Ejercicio01_05 Ejercicio POO\CalculadoraPrecioInmueble\CalculadoraPrecioInmueble\obj\Debug\CalculadoraPrecioInmueble.exe
+C:\Users\Adminsena\Desktop\4-trimestre\5 trimestre\Ejercicio01_05 Ejercicio POO\CalculadoraPrecioInmueble\CalculadoraPrecioInmueble\obj\Debug\CalculadoraPrecioInmueble.pdb
