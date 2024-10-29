@@ -1,379 +1,114 @@
 body{
     width: 100%;
-    height: 756px;
+    height: 945px;
     margin: 0;
     padding: 0;
     background-color: black;
-    overflow: hidden;
-}
-body::-webkit-scrollbar,
-#informacion_login::-webkit-scrollbar{
-    width: 10px;
-    background: rgb(145, 139, 243);
-}
-body::-webkit-scrollbar-track,
-#informacion_login::-webkit-scrollbar-track{
-    background-color: rgb(145, 139, 243);
-}
-body::-webkit-scrollbar-thumb,
-#informacion_login::-webkit-scrollbar-thumb{
-    background: rgb(49, 46, 104);
-}
-body::-webkit-scrollbar-thumb:hover,
-#informacion_login::-webkit-scrollbar-thumb:hover{
-    background: rgb(22, 22, 29);
 }
 
+/*las 3 secciones principales de la pagina login*/
 header{
     width: 100%;
-    height: 78px;
+    height: 10%;
     background-color:rgb(86, 83, 146);
 }
+main{
+    width: 100%;
+    height: 80%;
+    background-image: url(../multimedia/imagenes/fondo_login.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -140px;
+}
+footer{
+    width: 100%;
+    height: 10%;
+    background-color:rgb(86, 83, 146);
+}
+
+/** estilo del header -------------------------------------------------------*/
 header img{
-    width: 78px;
-    height: 78px;
+    width: 94.500px;
+    height: 100%;
     box-shadow: 2px -2px 5px rgb(145, 139, 243);
+    display: block;
 }
 header h1{
-    width: 85%;
+    width: 300px;
     height: auto;
-    color: black;
-    /* border: 1px solid red; */
     position: relative;
-    left: 88px;
-    bottom: 87px;
+    font-size: 52px;
+    left: 120px;
+    bottom: 118px;
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
     text-shadow: 2px 2px 5px rgb(145, 139, 243);
-
 }
 
-main{
-    width: 100%;
-    height: 600px;
-    background-image: url(../../multimedia/imagenes/fondo_login.webp);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
+/** estilo main-------------------------------------------------------------------*/
 #contenido{
-    width: 70%;
+    width: 80%;
     height: 90%;
-    background-color:rgb(86, 83, 146);
-    border: 1px solid rgb(63, 61, 107);
-    border-radius: 15px;
+    background-color:rgba(86, 83, 146, 0.5);
     position: relative;
-    left: 15%;
     top: 5%;
-    display: flex;
+    left: 10%;
 }
-.containers{
-    width: 50%;
-    height: 100%;
-    background-color: transparent;
-    border-radius: 15px 0px 0px 15px;
-}
-#container{
-    width: 49.90%;
+
+/** estilo contenerdor button-group*/
+#contenido div{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: serif;
 }
 #button-group{
-    height: 60px;
-    border-radius: 15px 0 0 0;
+    height: 10%;
+    background-color:rgba(86, 83, 146, 1);
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content:start;
 }
 .custom-btn{
-    width: 180px;
-    height: 30px;
+    padding: 0px 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 50px;
+    border: none;
     position: relative;
-    /* display: flex; */
     align-items: center;
     justify-content: center;
     background-color: transparent;
     color: black;
-    text-decoration: none;
-    font-size: 20px;
     letter-spacing: 2px;
     border-radius: 30px;
-    border: none;
     box-shadow: 6px 6px 8px 0 rgb(145, 139, 243), -6px -6px 7.5px 0 rgb(145, 139, 243), inset 0 0 0 0 transparent;
     transition: box-shadow 200ms, transform 300ms cubic-bezier(.2,2,1,1);
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 15px;
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    text-shadow: 1px 1px 1px rgb(145, 139, 243);
-
+    font-size: 30px;
 }
 .custom-btn:hover{
     color: #434245;
+    cursor: pointer;
 }
 .custom-btn:active{
     box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 8px 8px 12px 0px rgba(198, 186, 207, .9), inset -8px -8px 12px 0px rgb(145, 139, 243);
     transform: scale(.9);
 }
 
-#informacion_login{
+/** estilo contenedor content*/
+#content{
     height: 90%;
-    border-radius: 0px 15px 15px 0px;
-    border-left: 1px solid white;
-    overflow-y: scroll;
-    box-sizing: border-box;
-    padding: 10px;
-    margin-top: 2%;
-    text-align: justify;
-    background-color: rgb(50, 48, 85);
-    color: white;
-    font-family: "Platypi", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: clamp(12px,0.9vw,18px);
-}
-#informacion_login h2{
-    text-align: center;
-    color: black;
-    text-shadow: 1px 1px 5px rgb(145, 139, 243);
+    position: relative;
+    bottom: 20px;
 }
 
-footer{
-    width: 100%;
-    height: 78px;
-    background-color:rgb(86, 83, 146);
+img{
+    width: 10px;
+    height: 10px;
 }
-
-@media (min-width: 1281px) {
-    /* Estilos para pantallas grandes */
-    header{
-    background-color:rgb(86, 83, 146);
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-    /* Estilos para laptops o pantallas pequeñas */
-    .custom-btn{
-        font-size: 18PX;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    /* Estilos para tabletas */
-    body{
-        overflow-y: scroll;
-    }
-    main{
-        height: 1120px;
-        background-attachment: fixed;
-    }
-    #contenido{
-        height: 1000px;
-        flex-direction:column;
-    }
-    .containers{
-        width: 100%;
-        height: 50%;
-    }
-    #container{
-        width:100%;
-    }
-    #button-group{
-        width: 99.8%;
-        border-radius: 15px 15px 0 0;
-    }
-    #informacion_login{
-        height: 50%;
-        border-left: 0;
-        border-radius: 0;
-        margin-bottom: 12px;
-    }
-    .custom-btn{
-        width: 300PX;
-    }
-}
-
-@media (max-width: 767px) {
-    /* Estilos para teléfonos más grandes */
-    header{
-        height: 150px;
-        justify-content: center;
-        background-color:rgb(86, 83, 146); /*borrar*/
-    }
-    header img{
-        width: 100px;
-        height: 100px;
-        position: relative;
-        left: 42%;
-        right: 50%;
-        top: 10px;
-        box-shadow: 0px 0px 5px 3px rgb(145, 139, 243);
-        border-radius: 10px;
-    }
-
-    header h1{
-        width: 100%;
-        height: 35px;
-        bottom: 16px;
-        left: 0px;
-        text-align: center;
-    }
-    main{
-        background-size: cover;
-        background-position: center;
-        height: 1120px;
-        background-attachment: fixed;
-    }
-    #contenido{
-        height: 1000px;
-        flex-direction:column;
-    }
-    .containers{
-        width: 100%;
-        height: 50%;
-    }
-    #container{
-        width:100%;
-    }
-    #button-group{
-        width: 99.8%;
-        border-radius: 15px 15px 0 0;
-    }
-    #informacion_login{
-        height: 50%;
-        border-left: 0;
-        border-radius: 0;
-        margin-bottom: 12px;
-    }
-    .custom-btn{
-        width: 300PX;
-    }
-}
-@media (max-width: 521px){
-    .custom-btn{
-        font-size: clamp(11px, 3vw, 18px);
-        line-height: 23px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Estilos para móviles pequeños */
-    header{
-    background-color:rgb(86, 83, 146); /*borrar*/
-
-    }
-
-    header img{
-        left: 39%;
-    }
-}
-
-/*
-Para utilizar consultas de medioses
-
-1. Dispositivos móviles pequeños (teléfonos):
-Ancho máximo de pantalla: `320pxa480px
-Consulta de medios:
-css
-
-Copiar código
-@media (max-width: 480px) {
-Estilos para móviles pequeños
-}
-
-}
-``
-
-}
-2. Dispositivos móviles medianos (teléfonos grandes):
-Ancho máximo de pantalla: `481pxa767px
-Consulta de medios:
-css
-
-Copiar código
-@media (max-width: 767px) {
-
-
-Estilos para teléfonos más grandes
-}
-
-}
-``
-
-}
-3. Tabletas y dispositivos intermedios:
-Ancho de pantalla:`768pxa1024px
-Consulta de medios:
-css
-
-Copiar código
-@media (min-width: 768px) and (max-width: 1024px) {
-    Estilos para tabletas
-}
-4. Pantallas de escritorio pequeñas o portátiles:
-Ancho de pantalla:`1021025pxa1280px
-Consulta de medios:
-css
-
-Copiar código
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-
-Estilos para laptops o pantallas pequeñas
-}
-
-}
-``
-5. Pantallas de escritorio grandes:
-Ancho de pantalla: `1281pxes
-Consulta de medios:
-css
-
-Copiar código
-@media (min-width: 1281px)
-     Estilos para pantallas grandes
-}
-6. Pantallas extra grandes (monitores 4K):
-Ancho de pantalla: más de1920px
-Consulta de medios:
-css
-
-Copiar código
-@media (min-width: 1920px) {
-    Estilos para pantallas 4K
-}
-
-
-7. Orientación de la pantalla:
-Puedes ajustar el diseño dependiendo de si el dispositivo está en orientación vertical ( retrato ) opaisaje):
-css
-
-Copiar código
-@media (orientation: portrait) {
-
-
- Estilos para orientación vertical
-}
-
-
-}
-
-@
-
-}
-
-@media (orientation: landscape) {
-     Estilos para orientación horizontal
-}
-Considerar
-Unidades relativas :px),En orem para que
-Unidades de visualización :Volkswagen(ventana gráficaes​
-Usar estos puntos de ruptura te ayudará a que tu diseño sea responsivosi se
-
-Para más información sobre desarrollo web visita [gptonline.ai/es/]( https ://g.
-
-¡Y no olvides divertirte con [Dibujos Para Colorear]( Dibujos Para Colorear */
