@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adminsena\\Desktop\\jonathan\\calculadoranomina\\calculadoranomina\\calculadoranomina.csproj",
+      "projectUniqueName": "C:\\Users\\Adminsena\\Desktop\\4-trimestre\\jonathan\\calculadoranomina\\calculadoranomina\\calculadoranomina.csproj",
       "projectName": "calculadoranomina",
-      "projectPath": "C:\\Users\\Adminsena\\Desktop\\jonathan\\calculadoranomina\\calculadoranomina\\calculadoranomina.csproj",
+      "projectPath": "C:\\Users\\Adminsena\\Desktop\\4-trimestre\\jonathan\\calculadoranomina\\calculadoranomina\\calculadoranomina.csproj",
       "packagesPath": "C:\\Users\\Adminsena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adminsena\\Desktop\\jonathan\\calculadoranomina\\calculadoranomina\\obj\\",
+      "outputPath": "C:\\Users\\Adminsena\\Desktop\\4-trimestre\\jonathan\\calculadoranomina\\calculadoranomina\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
