@@ -1,0 +1,260 @@
+body{
+    width: 98%;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+body::-webkit-scrollbar,
+#informacion_login::-webkit-scrollbar {
+    width: 15px; /* Ancho de la barra de scroll */
+    border-radius:0 0px 0px 0px; /* Bordes redondeados */
+}
+
+/* Estilo de la pista de scroll */
+body::-webkit-scrollbar-track,
+#informacion_login::-webkit-scrollbar-track {
+    background: rgb(145, 139, 243); /* Color de fondo de la pista */
+    border-radius:0 0px 0px 0px; /* Bordes redondeados */
+}
+body::-webkit-scrollbar-thumb,
+#informacion_login::-webkit-scrollbar-thumb {
+    background: rgb(49, 46, 104); /* Color del pulgar */
+    border-radius:0 0px 0px 0px; /* Bordes redondeados */
+    border: 2px solid rgb(46, 60, 104); /* Bordes alrededor del pulgar */
+}
+/* Estilo del pulgar cuando se hace hover */
+body::-webkit-scrollbar-thumb:hover,
+#informacion_login::-webkit-scrollbar-thumb:hover {
+    background: rgb(22, 21, 46); /* Color del pulgar al pasar el mouse */
+}
+
+.secciones {
+    width: 100%;
+    height: 710px;
+    display: flex;
+    margin: 0;
+}
+#imagenes{
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+}
+  
+.imagen-grande {
+    width: 60%;
+    height: 710px;
+    margin: 0;
+    /* Agrega aquí los estilos para la imagen grande */
+    background-color: #ccc; /* Color de fondo temporal para visualizar el área */
+}
+
+.imagen-grande img{
+    width: 100%;
+    height: 100%;
+}
+  
+.mini-portafolio {
+    width: 39.9%;
+    height: 710px;
+    /* Agrega aquí los estilos para el mini portafolio */
+    background-color: rgba(29, 29, 62, 0.9);
+    overflow-y: scroll;
+}
+
+.mini-portafolio::-webkit-scrollbar,
+#informacion_login::-webkit-scrollbar {
+    width: 6px; /* Ancho de la barra de scroll */
+    border-radius:0 0px 0px 0px; /* Bordes redondeados */
+}
+
+/* Estilo de la pista de scroll */
+.mini-portafolio::-webkit-scrollbar-track,
+#informacion_login::-webkit-scrollbar-track {
+    background: rgb(44, 124, 9); /* Color de fondo de la pista */
+    border-radius:0 0px 0px 0px; /* Bordes redondeados */
+}
+.mini-portafolio::-webkit-scrollbar-thumb,
+#informacion_login::-webkit-scrollbar-thumb {
+    background: rgb(76, 232, 10); /* Color del pulgar */
+    border-radius:0 0px 0px 0px; /* Bordes redondeados */
+    border: 2px solid rgb(76, 232, 10); /* Bordes alrededor del pulgar */
+}
+/* Estilo del pulgar cuando se hace hover */
+.mini-portafolio::-webkit-scrollbar-thumb:hover,
+#informacion_login::-webkit-scrollbar-thumb:hover {
+    background: rgb(22, 21, 46); /* Color del pulgar al pasar el mouse */
+}
+
+.mini-portafolio img{
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+}
+/*////////////////////////////////*/
+#descripcion-principal{
+    height: 300px;
+    background: rgb(22, 21, 46); /* Color del pulgar al pasar el mouse */
+    display: block;
+    margin-top: -22px;
+}
+
+#descripcion-principal h2{
+    margin-left: 110px;
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+}
+
+#descripcion-principal h1{
+    margin-left: 110px;
+    font-size: 35px;
+    position: relative;
+    top: 0px;
+}
+.ubicacion {
+    margin-left: 110px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+    font-size: 20px;
+}
+
+.ubicacion i img{
+    width: 30px;
+    height: 30px;
+}
+
+#descripcion-principal #pa{
+    margin-left: 110px;
+    font-size: 20px;
+    position: relative;
+    bottom: 20px;
+}
+
+#descripcion-principal h3{
+    margin-left: 110px;
+    font-size: 50px;
+    position: relative;
+    bottom: 70px;
+}
+  
+.bold {
+    font-weight: bold;
+}
+  
+.boton-regresar {
+    width: 50px;
+    height: 260px;
+    display: inline-block;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    bottom:380px;
+}
+
+.letra {
+    display: block;
+    text-align: center;
+    font-size: 1.8em; /* Ajusta el tamaño de la fuente según tus necesidades */
+}
+
+#descripcion-general{
+    height: auto;
+    border-top: 1px solid white;
+    display: block;
+}
+
+#descripcion-general h2 {
+    background: rgb(22, 21, 46); /* Color del pulgar al pasar el mouse */
+    color: white;
+    font-size: 1.5em;
+    margin: 0px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#descripcion-general p {
+    width: 98.5%;
+    line-height: 1.5;
+    color: white;
+    font-size: 1.1em;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#detalles{
+    width: 98.7%;
+    height: 200px;
+    display: block;
+}
+#detalles h2 {
+    width: 100%;
+    height: auto;
+    background: rgb(22, 21, 46); /* Color del pulgar al pasar el mouse */
+    color: white;
+    font-size: 1.5em;
+    margin: 0px;
+    padding-left: 20px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.hh3{
+    width: 95%;
+    padding-left: 50px;
+    border-top: 1px solid white;
+}
+
+.card{
+    width: 200px;
+    height: 80px;
+    border: 1px solid white;
+    background-color:rgb(75, 72, 155);
+    break-inside: avoid-column; /* Evita que una carta se divida entre columnas */
+
+}
+
+.cards{
+    width: 98.9%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.card img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.card h3{
+    width: 130px;
+    position: relative;
+    left: 70px;
+    bottom: 50px;
+    /* word-break: break-all; */
+    word-wrap: break-word;
+}
+
+.card p{
+    position: relative;
+    left: 70px;
+    bottom: 70px;
+}
+
+#distribucion-caracteristicas{
+    display: block;
+}
+
+#distribucion-caracteristicas .card{
+    width: 200px;
+    height: 80px;
+    border: 1px solid white;
+    background-color:rgb(75, 72, 155);
+}

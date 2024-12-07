@@ -1,0 +1,63 @@
+﻿body {
+    width: 100%;
+    height: 729px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    background-image: url(../multimedia/imagenes/fondo_login.webp);
+    background-repeat: no-repeat;
+    background-size: 730px;
+    background-position:right;
+    color:white;
+    overflow:hidden;
+    text-shadow:5px 5px 5px black;
+}
+
+#opacidad {
+    width:100%;
+    height:100%;
+    background-color: rgba(50, 0, 50, 0.5);
+    margin:0px;
+}
+
+h2{
+    position:absolute;
+    top:0px;
+    left:56%;
+    text-align:center;
+    font-size:65px;
+}
+
+img{
+    width: 809px;
+    height: 100%;
+}
+
+.progress-bar-container {
+    width: 500px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    position:absolute;
+    top:500px;
+    left:60%;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color:rgb(64, 64, 145, 0.5);
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+p {
+    position: absolute;
+    top: 490px;
+    left:61%;
+    font-size:40px;
+}

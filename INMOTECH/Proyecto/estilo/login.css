@@ -6,17 +6,17 @@ body{
 }
 header{
     width: 100%;
-    height: 18%;
-    background-color: rgba(14, 14, 207, 0.76);
+    height: 12%;
+    background-color: rgba(29, 29, 62, 0.9);
     display: flex;
 }
 header img{
-    width: 138px;
-    height: 138px;
+    width: 90px;
+    height: 90px;
     margin-left: 0.2%;
     margin-right: 1%;
-    margin-top: 10px;
-    box-shadow: 2px 2px 5px rgb(145, 139, 243);
+    margin-top: 5px;
+    box-shadow: 2px 2px 5px black;
     border-radius: 10%;
 }
 header h1{
@@ -25,8 +25,9 @@ header h1{
     font-weight: weight;
     font-style: normal;
     font-size: 70px;
-    margin: 30px 100PX 0 0;
-    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    margin: 0px 100PX 0 0;
+    text-shadow: 2px 2px 5px black;
+    color: white;
 }
 main{
     width: 100%;
@@ -44,7 +45,7 @@ main{
     text-align: center;
     width: 40%;
     height: 83%;
-    background-color: rgb(64, 64, 145, 0.9);
+    background-color: rgba(29, 29, 62, 0.9);
     padding-top: 0;
 }
 
@@ -56,18 +57,19 @@ main{
 }
 
 .button-group button {
-    width: 49.5%;
+    width: 50%;
     height: 50px;
     font-size: 25px;
     cursor: pointer;
-    background-color:rgb(64, 64, 145, 0.1);
+    background-color:rgb(64, 64, 145, 0.5);
     margin:0px;
     border: none;
-    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    text-shadow: 2px 2px 5px black;
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    color: white;
 }
 .button-group button:hover{
     background-color: rgb(138, 138, 145);
@@ -86,12 +88,13 @@ display: none;
 
 .content-item h2{
     margin: 0;
-    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    color: white;
+    text-shadow: 2px 2px 5px black;
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-size: 40px;
+    font-size: 35px;
 }
 .content-item.active {
     display: block;
@@ -102,12 +105,16 @@ form{
     margin-top: 20px;
 }
 form label{
-    width: 10%;
+    width: 8%;
+    height: 40px;
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
-    border-radius: 50px;
-    min-width: 50px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    min-width: 30px;
+    box-shadow: 0px 0px 10px 3px white;
+
+
 }
 label img{
     width: 100%;
@@ -119,64 +126,75 @@ input[type="text"],
 input[type="password"],
 input[type="email"] {
     width: 80%;
-    height: 40px;
+    height: 30px;
     border:1px solid white;
     border-radius: 3px;
     position: relative;
-    left: 30px;
-    bottom: 58px;
-    font-size: 30px;
+    left: 15px;
+    bottom: 40px;
+    font-size: 25px;
 }
 form button {
     width: 98%;
-    height: 60px;
+    height: 40px;
     background-color: rgb(138, 138, 145);
     color: black;
     border: none;
-    padding: 10px 20px;
+    padding: 0px 20px;
     border-radius: 3px;
     cursor: pointer;
-    margin-top: 120px;
-    font-size: 30px;
-    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    margin-top: 160px;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px white;
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
 }
+
+form button:hover{
+    background-color:rgb(64, 64, 145, 0.5);
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}
+
 #loginc{
     display: block;
 }
 #registrar{
-    margin-top: 20px;
+    margin-top: 86px;
 }
 
 #informacion_login{
     width: 35%;
     height: 78%;
     bottom: 73%;
-    background-color: red;
     display:block;
     position:relative;
     left: 55%;
     border-radius: 5%;
-    background-color: rgb(64, 64, 145, 1);
+    background-color: rgba(29, 29, 62, 1.0);
     font-size: 25px;
     overflow-y: scroll;
     padding: 20px;
     box-sizing: content-box;
+    color: white;
 }
 #informacion_login h2{
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-size: 5vw;
-    margin: 30px 100PX 0 0;
-    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    font-size: 4.8vw;
+    margin: 30px 0px 0 0;
+    text-shadow: 2px 2px 5px black;
+    padding-top: 120px;
+    padding-bottom: 145px;
+    text-align: center;
+
 }
 #informacion_login p{
-    text-shadow: 2px 2px 5px rgb(145, 139, 243);
+    text-shadow: 2px 2px 5px black;
     text-align:justify;
 }
 body::-webkit-scrollbar,

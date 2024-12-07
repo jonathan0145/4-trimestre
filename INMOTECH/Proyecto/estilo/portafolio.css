@@ -270,7 +270,6 @@ nav ul li a{
     gap: 20px;
     padding: 50px;
 }
-
 .carta {
     position: relative;
     width: calc(33.333% - 20px);
